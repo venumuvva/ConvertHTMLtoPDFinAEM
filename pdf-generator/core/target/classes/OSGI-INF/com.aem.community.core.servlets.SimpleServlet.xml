@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="com.aem.community.core.servlets.SimpleServlet">
+        <implementation class="com.aem.community.core.servlets.SimpleServlet"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Servlet"/>
+        </service>
+        <property name="sling.servlet.paths">
+            /bin/pdfgenerator
+        </property>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="com.aem.community.core.servlets.SimpleServlet"/>
+        <reference name="requestResponseFactory" interface="com.day.cq.contentsync.handler.util.RequestResponseFactory" cardinality="1..1" policy="static" bind="bindRequestResponseFactory" unbind="unbindRequestResponseFactory"/>
+        <reference name="requestProcessor" interface="org.apache.sling.engine.SlingRequestProcessor" cardinality="1..1" policy="static" bind="bindRequestProcessor" unbind="unbindRequestProcessor"/>
+    </scr:component>
+</components>

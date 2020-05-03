@@ -1,0 +1,6 @@
+com\aem\community\core\models\MediaReplacedElementFactory.class
+com\aem\community\core\servlets\SimpleServlet.class
+com\aem\community\core\listeners\SimpleResourceListener.class
+com\aem\community\core\filters\LoggingFilter.class
+com\aem\community\core\package-info.class
+com\aem\community\core\schedulers\SimpleScheduledTask.class
